@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{project_name}}</title>
+        <link rel="stylesheet" href="static/css/style.css" type="text/css">
+    </head>
+    <body>
+        <h1>{{project_name}}</h1>
+        <section class="cookies">
+
+            {{#each cookies}}
+                <article class="cookie">
+                    <h3>{{this.name}}</h3>
+                    <img src="{{this.image_path}}"/>
+                </article>
+            {{/each}}
+
+        </section>
+
+    </body>
+</html>
